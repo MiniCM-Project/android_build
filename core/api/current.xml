@@ -238,7 +238,7 @@
  volatile="false"
  value="&quot;android.permission.CHANGE_COMPONENT_ENABLED_STATE&quot;"
  static="true"
- final="true"
+w final="true"
  deprecated="not deprecated"
  visibility="public"
 >
@@ -25276,6 +25276,28 @@
  final="true"
  deprecated="not deprecated"
  visibility="public"
+>
+</field>
+<field name="ACTION_POWER_CONNECTED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.action.POWER_CONNECTED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public" 
+>
+</field>
+<field name="ACTION_POWER_DISCONNECTED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.action.BATTERY_LOW&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public" 
 >
 </field>
 <field name="ACTION_PROVIDER_CHANGED"
