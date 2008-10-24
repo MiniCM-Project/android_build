@@ -238,7 +238,7 @@
  volatile="false"
  value="&quot;android.permission.CHANGE_COMPONENT_ENABLED_STATE&quot;"
  static="true"
-w final="true"
+ final="true"
  deprecated="not deprecated"
  visibility="public"
 >
