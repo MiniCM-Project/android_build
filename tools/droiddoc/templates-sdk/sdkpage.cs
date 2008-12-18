@@ -10,7 +10,7 @@
 
 <div class="g-unit" id="doc-content" >
 
-<div id="jd-content" style="min-width:820px">
+<div id="jd-content" style="min-width:870px">
 
 <h1><?cs var:sdk.version ?></h1>
 <p><em>
@@ -18,20 +18,20 @@
 <a href="RELEASENOTES.html">Release Notes</a>
 </em></p>
 
-<div class="sidebox-wrapper" style="width:250px">
-<div class="sidebox-inner">
+<div id="qv-wrapper">
+<div id="qv">
 <h2>Get Started</h2>
-<p><a href="requirements.html">System and Sofware Requirements &rarr;</a></p>
-<p><a href="installing.html">Guide to Installing the SDK &rarr;</a></p>
+<p><a href="requirements.html">System and Sofware Requirements</a></p>
+<p><a href="installing.html">Guide to Installing the SDK</a></p>
 
 <h2>Upgrade</h2>
-<p><a href="upgrading.html">Upgrading the SDK &rarr;</a></p>
-<p><a href="">API changes overview &rarr;</a></p>
-<p><a href="">API differences report &rarr;</a></p>
+<p><a href="upgrading.html">Upgrading the SDK</a></p>
+<p><a href="migrating/changes-overview.html">API changes overview</a></p>
+<p><a href="migrating/changes.html">API differences report</a></p>
 
 <h2>Using Eclipse?</h2>
 <p>Android provides an Eclipse plugin to help make programming and debugging easier.</p>
-<p><a href="">Install Eclipse plugin &rarr;</a></p>
+<p><a href="<?cs var:toroot ?>guide/developing/tools/adt.html">Install Eclipse plugin</a></p>
 </div>
 </div>
 
