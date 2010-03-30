@@ -14,8 +14,10 @@
 # limitations under the License.
 #
 
-# This is a generic product that isn't specialized for a specific device.
+# This is a generic phone product that isn't specialized for a specific device.
 # It includes the base Android platform.
+
+PRODUCT_POLICY := android.policy_phone
 
 PRODUCT_PACKAGES := \
     AccountAndSyncSettings \
@@ -35,6 +37,7 @@ PRODUCT_PACKAGES := \
     Mms \
     Music \
     Provision \
+    Phone \
     QuickSearchBox \
     Settings \
     Sync \
