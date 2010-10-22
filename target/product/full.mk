@@ -19,43 +19,11 @@
 # build quite specifically for the emulator, and might not be
 # entirely appropriate to inherit from for on-device configurations.
 
-PRODUCT_PACKAGES := \
-    OpenWnn \
-    PinyinIME \
-    VoiceDialer \
-    libWnnEngDic \
-    libWnnJpnDic \
-    libwnndict
-
-# Additional settings used in all AOSP builds
-PRODUCT_PROPERTY_OVERRIDES := \
-    keyguard.no_require_sim=true \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=true \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10
-
-PRODUCT_COPY_FILES := \
-    development/data/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    development/data/etc/vold.conf:system/etc/vold.conf
-
-# Put en_US first in the list, so make it default.
-PRODUCT_LOCALES := en_US
-
-# Pick up some sounds - stick with the short list to save space
-# on smaller devices.
-$(call inherit-product-if-exists, frameworks/base/data/sounds/OriginalAudio.mk)
-
-# Get the TTS language packs
-$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
-
-# Get the list of languages.
-$(call inherit-product, build/target/product/locales_full.mk)
-
-$(call inherit-product, build/target/product/generic.mk)
+$(call inherit-product, build/target/board/generic/device.mk)
+$(call inherit-product, build/target/product/full_base.mk)
 
 # Overrides
 PRODUCT_NAME := full
-PRODUCT_BRAND := generic
 PRODUCT_DEVICE := generic
-PRODUCT_MODEL := Full Android
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Emulator
