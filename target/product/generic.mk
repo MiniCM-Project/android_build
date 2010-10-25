@@ -17,13 +17,8 @@
 # This is a generic phone product that isn't specialized for a specific device.
 # It includes the base Android platform.
 
-PRODUCT_PACKAGES := \
-    Mms
-
-PRODUCT_COPY_FILES := \
-	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_no_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
 # Overrides
 PRODUCT_BRAND := generic

@@ -16,22 +16,14 @@
 
 # This is a build configuration for a full-featured build of the
 # Open-Source part of the tree. It's geared toward a US-centric
-# build of the emulator, but all those aspects can be overridden
-# in inherited configurations.
+# build quite specifically for the emulator, and might not be
+# entirely appropriate to inherit from for on-device configurations.
 
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.com.android.dataroaming=true \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10
-
-PRODUCT_COPY_FILES := \
-    development/data/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_no_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/board/generic/device.mk)
 
 # Overrides
 PRODUCT_NAME := full
-PRODUCT_BRAND := generic
 PRODUCT_DEVICE := generic
-PRODUCT_MODEL := Full Android
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Emulator
